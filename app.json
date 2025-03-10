@@ -22,7 +22,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/icon.png",
         "backgroundColor": "#1E293B"
-      }
+      },
+      "package": "com.nasiruddin54017.ramadanapp"
     },
     "web": {
       "bundler": "metro",
@@ -35,6 +36,15 @@
     "experiments": {
       "typedRoutes": true,
       "tsconfigPaths": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "58534670-8070-48a4-8d8d-0a648ecb813d"
+      }
+    },
+    "owner": "nasiruddin54017"
   }
 }
