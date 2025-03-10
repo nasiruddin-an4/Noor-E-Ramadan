@@ -1,22 +1,12 @@
 import { create } from 'zustand';
 import { persist, createJSONStorage } from 'zustand/middleware';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import type { Division, FoodItem, Settings } from '@/types/data';
 
-interface State {
-  selectedDivision: string;
-  selectedFoods: { [key: string]: FoodItem };
-  settings: Settings;
-  setSelectedDivision: (division: string) => void;
-  toggleFoodSelection: (food: FoodItem) => void;
-  clearFoodSelections: () => void;
-  updateSettings: (settings: Partial<Settings>) => void;
-}
-
-export const useStore = create<State>()(
+export const useStore = create(
   persist(
     (set) => ({
       selectedDivision: 'dhaka',
+      loading: false,
       selectedFoods: {},
       settings: {
         selectedDivision: 'dhaka',
@@ -26,6 +16,7 @@ export const useStore = create<State>()(
       },
       setSelectedDivision: (division) =>
         set(() => ({ selectedDivision: division })),
+      setLoading: (loading) => set(() => ({ loading })),
       toggleFoodSelection: (food) =>
         set((state) => {
           const newSelectedFoods = { ...state.selectedFoods };
@@ -36,8 +27,7 @@ export const useStore = create<State>()(
           }
           return { selectedFoods: newSelectedFoods };
         }),
-      clearFoodSelections: () =>
-        set(() => ({ selectedFoods: {} })),
+      clearFoodSelections: () => set(() => ({ selectedFoods: {} })),
       updateSettings: (newSettings) =>
         set((state) => ({
           settings: { ...state.settings, ...newSettings },

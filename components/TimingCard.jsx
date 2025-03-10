@@ -2,27 +2,22 @@ import { View, Text, StyleSheet } from 'react-native';
 import { format } from 'date-fns';
 import { Moon, Sun } from 'lucide-react-native';
 
-interface TimingCardProps {
-  date: string;
-  sehri: string;
-  iftar: string;
-}
-
-export default function TimingCard({ date, sehri, iftar }: TimingCardProps) {
+export default function TimingCard({ Date, Sehri, Iftar }) {
   return (
     <View style={styles.container}>
-      <Text style={styles.date}>{format(new Date(date), 'MMMM d, yyyy')}</Text>
+      <Text style={styles.date}>{Date}</Text>
+
       <View style={styles.timingsContainer}>
         <View style={styles.timing}>
           <Moon size={24} color="#F59E0B" />
           <Text style={styles.label}>Sehri</Text>
-          <Text style={styles.time}>{sehri}</Text>
+          <Text style={styles.time}>{Sehri}</Text>
         </View>
         <View style={styles.divider} />
         <View style={styles.timing}>
           <Sun size={24} color="#F59E0B" />
           <Text style={styles.label}>Iftar</Text>
-          <Text style={styles.time}>{iftar}</Text>
+          <Text style={styles.time}>{Iftar}</Text>
         </View>
       </View>
     </View>

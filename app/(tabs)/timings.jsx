@@ -4,13 +4,24 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { Picker } from '@react-native-picker/picker';
 import { useStore } from '@/store/useStore';
 import { divisions } from '@/data/divisions.json';
-import { timings } from '@/data/timings.json';
 import { format } from 'date-fns';
 import { ArrowRight } from 'lucide-react-native';
+import namazSchedule from '@/data/namaz_schedule_2025.json';
+import dayjs from 'dayjs';
 
 export default function TimingsScreen() {
-  const { selectedDivision, settings } = useStore();
-  const [compareWithDivision, setCompareWithDivision] = useState('chittagong');
+  const today = dayjs().format('D MMMM, YYYY');
+
+  const [fromDistrict, setFromDistrict] = useState('dhaka');
+  const [toDistrict, setToDistrict] = useState('chattogram');
+
+  const fromDistrictTimings = namazSchedule[fromDistrict].filter(
+    (timing) => timing.Date === today
+  )[0];
+
+  const toDistrictTimings = namazSchedule[toDistrict].filter(
+    (timing) => timing.Date === today
+  )[0];
 
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
@@ -21,37 +32,45 @@ export default function TimingsScreen() {
             <Text style={styles.label}>From</Text>
             <View style={styles.pickerWrapper}>
               <Picker
-                selectedValue={selectedDivision}
+                selectedValue={fromDistrict}
+                onValueChange={(value) => {
+                  setFromDistrict(value);
+                }}
                 style={styles.pickerSelect}
                 dropdownIconColor="#F59E0B"
-                itemStyle={styles.pickerItem}>
+                itemStyle={styles.pickerItem}
+              >
                 {divisions.map((division) => (
                   <Picker.Item
                     key={division.id}
-                    label={division.name}
+                    label={`${division.name} (${division.nameBn})`}
                     value={division.id}
-                    color="#F8FAFC"
+                    color="black"
                   />
                 ))}
               </Picker>
             </View>
           </View>
-          <ArrowRight size={24} color="#F59E0B" />
+          <ArrowRight style={styles.icon} size={24} color="#F59E0B" />
           <View style={styles.picker}>
             <Text style={styles.label}>To</Text>
             <View style={styles.pickerWrapper}>
               <Picker
-                selectedValue={compareWithDivision}
-                onValueChange={setCompareWithDivision}
+                selectedValue={toDistrict}
+                onValueChange={(value) => {
+                  console.log('🚀 ~ TimingsScreen ~ value:', value);
+                  setToDistrict(value);
+                }}
                 style={styles.pickerSelect}
                 dropdownIconColor="#F59E0B"
-                itemStyle={styles.pickerItem}>
+                itemStyle={styles.pickerItem}
+              >
                 {divisions.map((division) => (
                   <Picker.Item
                     key={division.id}
-                    label={division.name}
+                    label={`${division.name} (${division.nameBn})`}
                     value={division.id}
-                    color="#F8FAFC"
+                    color="black"
                   />
                 ))}
               </Picker>
@@ -59,50 +78,47 @@ export default function TimingsScreen() {
           </View>
         </View>
       </View>
-      <ScrollView 
+      <ScrollView
         style={styles.scrollView}
         contentContainerStyle={styles.content}
-        showsVerticalScrollIndicator={false}>
-        {timings.dhaka.map((timing) => (
-          <View key={timing.date} style={styles.comparisonCard}>
-            <Text style={styles.date}>
-              {format(new Date(timing.date), 'MMMM d, yyyy')}
-            </Text>
-            <View style={styles.timingsRow}>
-              <View style={styles.divisionTiming}>
-                <Text style={styles.divisionName}>
-                  {divisions.find(d => d.id === selectedDivision)?.name}
-                </Text>
-                <View style={styles.times}>
-                  <View style={styles.timeBlock}>
-                    <Text style={styles.timeLabel}>Sehri</Text>
-                    <Text style={styles.time}>{timing.sehri}</Text>
-                  </View>
-                  <View style={styles.timeBlock}>
-                    <Text style={styles.timeLabel}>Iftar</Text>
-                    <Text style={styles.time}>{timing.iftar}</Text>
-                  </View>
+        showsVerticalScrollIndicator={false}
+      >
+        <View style={styles.comparisonCard}>
+          <Text style={styles.date}>{format(new Date(), 'MMMM d, yyyy')}</Text>
+          <View style={styles.timingsRow}>
+            <View style={styles.divisionTiming}>
+              <Text style={styles.divisionName}>
+                {fromDistrict.replace(/^./, fromDistrict[0].toUpperCase())}
+              </Text>
+              <View style={styles.times}>
+                <View style={styles.timeBlock}>
+                  <Text style={styles.timeLabel}>Sehri</Text>
+                  <Text style={styles.time}>{fromDistrictTimings.Sehri}</Text>
+                </View>
+                <View style={styles.timeBlock}>
+                  <Text style={styles.timeLabel}>Iftar</Text>
+                  <Text style={styles.time}>{fromDistrictTimings.Iftar}</Text>
                 </View>
               </View>
-              <View style={styles.divider} />
-              <View style={styles.divisionTiming}>
-                <Text style={styles.divisionName}>
-                  {divisions.find(d => d.id === compareWithDivision)?.name}
-                </Text>
-                <View style={styles.times}>
-                  <View style={styles.timeBlock}>
-                    <Text style={styles.timeLabel}>Sehri</Text>
-                    <Text style={styles.time}>{timing.sehri}</Text>
-                  </View>
-                  <View style={styles.timeBlock}>
-                    <Text style={styles.timeLabel}>Iftar</Text>
-                    <Text style={styles.time}>{timing.iftar}</Text>
-                  </View>
+            </View>
+            <View style={styles.divider} />
+            <View style={styles.divisionTiming}>
+              <Text style={styles.divisionName}>
+                {toDistrict.replace(/^./, toDistrict[0].toUpperCase())}
+              </Text>
+              <View style={styles.times}>
+                <View style={styles.timeBlock}>
+                  <Text style={styles.timeLabel}>Sehri</Text>
+                  <Text style={styles.time}>{toDistrictTimings.Sehri}</Text>
+                </View>
+                <View style={styles.timeBlock}>
+                  <Text style={styles.timeLabel}>Iftar</Text>
+                  <Text style={styles.time}>{toDistrictTimings.Iftar}</Text>
                 </View>
               </View>
             </View>
           </View>
-        ))}
+        </View>
       </ScrollView>
     </SafeAreaView>
   );
@@ -126,9 +142,12 @@ const styles = StyleSheet.create({
   },
   pickerContainer: {
     flexDirection: 'row',
+    alignContent: 'center',
     alignItems: 'center',
-    justifyContent: 'space-between',
-    gap: 12,
+    gap: 10,
+  },
+  icon: {
+    marginBottom: -30,
   },
   picker: {
     flex: 1,

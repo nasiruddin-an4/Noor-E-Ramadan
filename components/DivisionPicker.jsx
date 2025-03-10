@@ -4,7 +4,7 @@ import { useStore } from '@/store/useStore';
 import { divisions } from '@/data/divisions.json';
 
 export default function DivisionPicker() {
-  const { selectedDivision, setSelectedDivision } = useStore();
+  const { selectedDivision, setSelectedDivision, setLoading } = useStore();
 
   return (
     <View style={styles.container}>
@@ -12,16 +12,23 @@ export default function DivisionPicker() {
       <View style={styles.pickerContainer}>
         <Picker
           selectedValue={selectedDivision}
-          onValueChange={(value) => setSelectedDivision(value)}
+          onValueChange={(value) => {
+            setSelectedDivision(value);
+            setLoading(true);
+            setTimeout(() => {
+              setLoading(false);
+            }, 500);
+          }}
           style={styles.picker}
           dropdownIconColor="#F8FAFC"
-          itemStyle={styles.pickerItem}>
+          itemStyle={styles.pickerItem}
+        >
           {divisions.map((division) => (
             <Picker.Item
               key={division.id}
-              label={division.name}
+              label={`${division.name} (${division.nameBn})`}
               value={division.id}
-              color="#F8FAFC"
+              color="black"
             />
           ))}
         </Picker>
@@ -32,12 +39,12 @@ export default function DivisionPicker() {
 
 const styles = StyleSheet.create({
   container: {
-    marginBottom: 20,
+    // marginBottom: 20,
   },
   label: {
     fontSize: 16,
     color: '#F8FAFC',
-    marginBottom: 8,
+    // marginBottom: 8,
   },
   pickerContainer: {
     backgroundColor: '#1E293B',

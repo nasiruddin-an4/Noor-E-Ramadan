@@ -11,6 +11,11 @@
     "**/*.tsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
-    "nativewind-env.d.ts"
+    "nativewind-env.d.ts",
+    "app/(tabs)/index.jsx",
+    "components/TimingCard.jsx",
+    "components/DivisionPicker.jsx",
+    "store/useStore.js",
+    "app/(tabs)/timings.jsx"
   ]
 }
