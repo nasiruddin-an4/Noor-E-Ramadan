@@ -1,0 +1,72 @@
+{
+  "categories": [
+    {
+      "id": "fruits",
+      "name": "Fruits",
+      "nameBn": "ফল"
+    },
+    {
+      "id": "drinks",
+      "name": "Drinks",
+      "nameBn": "পানীয়"
+    },
+    {
+      "id": "traditional",
+      "name": "Traditional",
+      "nameBn": "ঐতিহ্যবাহী"
+    }
+  ],
+  "foods": [
+    {
+      "id": "dates",
+      "name": "Dates",
+      "nameBn": "খেজুর",
+      "category": "fruits",
+      "imageUrl": "https://images.unsplash.com/photo-1601555048641-71194b0b7339",
+      "portions": [
+        {
+          "size": "1 piece",
+          "calories": 23
+        },
+        {
+          "size": "100g",
+          "calories": 282
+        }
+      ]
+    },
+    {
+      "id": "jilapi",
+      "name": "Jilapi",
+      "nameBn": "জিলাপি",
+      "category": "traditional",
+      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+      "portions": [
+        {
+          "size": "1 piece",
+          "calories": 150
+        },
+        {
+          "size": "100g",
+          "calories": 375
+        }
+      ]
+    },
+    {
+      "id": "ালুর ছপ",
+      "name": "আলুর চপ",
+      "nameBn": "আলুর চপ",
+      "category": "traditional",
+      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+      "portions": [
+        {
+          "size": "1 piece",
+          "calories": 120
+        },
+        {
+          "size": "100g",
+          "calories": 375
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "divisions": [
+    {
+      "id": "dhaka",
+      "name": "Dhaka",
+      "nameBn": "ঢাকা"
+    },
+    {
+      "id": "chittagong",
+      "name": "Chittagong",
+      "nameBn": "চট্টগ্রাম"
+    },
+    {
+      "id": "sylhet",
+      "name": "Sylhet",
+      "nameBn": "সিলেট"
+    },
+    {
+      "id": "rajshahi",
+      "name": "Rajshahi",
+      "nameBn": "রাজশাহী"
+    },
+    {
+      "id": "khulna",
+      "name": "Khulna",
+      "nameBn": "খুলনা"
+    },
+    {
+      "id": "barisal",
+      "name": "Barisal",
+      "nameBn": "বরিশাল"
+    },
+    {
+      "id": "rangpur",
+      "name": "Rangpur",
+      "nameBn": "রংপুর"
+    },
+    {
+      "id": "mymensingh",
+      "name": "Mymensingh",
+      "nameBn": "ময়মনসিংহ"
+    }
+  ]
+}
