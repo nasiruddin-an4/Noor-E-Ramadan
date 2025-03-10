@@ -4,11 +4,16 @@
     "strict": true,
     "paths": {
       "@/*": ["./*"]
-    }
+    },
+    "allowJs": true,  
+    "checkJs": true,  
+    "jsx": "react-native"  
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "nativewind-env.d.ts",
@@ -16,6 +21,7 @@
     "components/TimingCard.jsx",
     "components/DivisionPicker.jsx",
     "store/useStore.js",
-    "app/(tabs)/timings.jsx"
+    "app/(tabs)/timings.jsx",
+    "app/_layout.jsx"
   ]
 }

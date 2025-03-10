@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Ramadan App with Calorie Tracking",
+    "name": "Ramadan-App",
     "slug": "ramadan-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -31,7 +31,8 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true,
@@ -42,9 +43,9 @@
         "origin": false
       },
       "eas": {
-        "projectId": "58534670-8070-48a4-8d8d-0a648ecb813d"
+        "projectId": "a5c8f4d8-bf32-43a8-a71d-d2d33460cf42"
       }
     },
-    "owner": "nasiruddin54017"
+    "owner": "nasiruddin.an4"
   }
 }
