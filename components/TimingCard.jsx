@@ -4,6 +4,7 @@ import { Moon, Sun } from 'lucide-react-native';
 
 export default function TimingCard({ Date, Sehri, Iftar }) {
   return (
+    
     <View style={styles.container}>
       <Text style={styles.date}>{Date}</Text>
 

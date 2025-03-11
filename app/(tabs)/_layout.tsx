@@ -16,7 +16,7 @@ export default function TabLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Prayer Times',
+          title: 'Ramadan Schedule',
           tabBarIcon: ({ size, color }) => (
             <Moon size={size} color={color} />
           ),

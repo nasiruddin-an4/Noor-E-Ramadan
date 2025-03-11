@@ -14,7 +14,7 @@ export default function HomeScreen() {
   return (
     <SafeAreaView style={styles.container} edges={['top']}>
       <View style={styles.header}>
-        <Text style={styles.title}>Prayer Times</Text>
+        <Text style={styles.title}>Ramadan Schedule</Text>
         <DivisionPicker />
       </View>
       <ScrollView

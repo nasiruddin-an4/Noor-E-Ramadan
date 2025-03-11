@@ -6,65 +6,203 @@
       "nameBn": "ফল"
     },
     {
-      "id": "drinks",
-      "name": "Drinks",
-      "nameBn": "পানীয়"
+      "id": "vegetables",
+      "name": "Vegetables",
+      "nameBn": "শাকসবজি"
     },
     {
-      "id": "traditional",
-      "name": "Traditional",
-      "nameBn": "ঐতিহ্যবাহী"
+      "id": "grains",
+      "name": "Grains",
+      "nameBn": "শস্য"
+    },
+    {
+      "id": "meat",
+      "name": "Meat",
+      "nameBn": "মাংস"
+    },
+    {
+      "id": "seafood",
+      "name": "Seafood",
+      "nameBn": "সামুদ্রিক খাবার"
+    },
+    {
+      "id": "dairy",
+      "name": "Dairy",
+      "nameBn": "ডেইরি"
+    },
+    {
+      "id": "protein",
+      "name": "Protein",
+      "nameBn": "প্রোটিন"
     }
   ],
   "foods": [
     {
-      "id": "dates",
-      "name": "Dates",
-      "nameBn": "খেজুর",
+      "id": "apple",
+      "name": "Apple",
+      "nameBn": "আপেল",
       "category": "fruits",
-      "imageUrl": "https://images.unsplash.com/photo-1601555048641-71194b0b7339",
+      "imageUrl": "",
       "portions": [
         {
-          "size": "1 piece",
-          "calories": 23
-        },
-        {
           "size": "100g",
-          "calories": 282
+          "calories": 52
         }
       ]
     },
     {
-      "id": "jilapi",
-      "name": "Jilapi",
-      "nameBn": "জিলাপি",
-      "category": "traditional",
-      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+      "id": "banana",
+      "name": "Banana",
+      "nameBn": "কলা",
+      "category": "fruits",
+      "imageUrl": "",
       "portions": [
         {
-          "size": "1 piece",
-          "calories": 150
-        },
-        {
           "size": "100g",
-          "calories": 375
+          "calories": 89
         }
       ]
     },
     {
-      "id": "ালুর ছপ",
-      "name": "আলুর চপ",
-      "nameBn": "আলুর চপ",
-      "category": "traditional",
-      "imageUrl": "https://images.unsplash.com/photo-1589302168068-964664d93dc0",
+      "id": "mango",
+      "name": "Mango",
+      "nameBn": "আম",
+      "category": "fruits",
+      "imageUrl": "",
       "portions": [
         {
-          "size": "1 piece",
-          "calories": 120
-        },
+          "size": "100g",
+          "calories": 60
+        }
+      ]
+    },
+    {
+      "id": "carrot",
+      "name": "Carrot",
+      "nameBn": "গাজর",
+      "category": "vegetables",
+      "imageUrl": "",
+      "portions": [
         {
           "size": "100g",
-          "calories": 375
+          "calories": 41
+        }
+      ]
+    },
+    {
+      "id": "tomato",
+      "name": "Tomato",
+      "nameBn": "টমেটো",
+      "category": "vegetables",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 18
+        }
+      ]
+    },
+    {
+      "id": "rice_white",
+      "name": "Rice (White)",
+      "nameBn": "সাদা চাল",
+      "category": "grains",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 130
+        }
+      ]
+    },
+    {
+      "id": "bread_whole_wheat",
+      "name": "Bread (Whole Wheat)",
+      "nameBn": "গমের রুটি",
+      "category": "grains",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 247
+        }
+      ]
+    },
+    {
+      "id": "chicken_breast",
+      "name": "Chicken Breast",
+      "nameBn": "মুরগির মাংস",
+      "category": "meat",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 165
+        }
+      ]
+    },
+    {
+      "id": "beef",
+      "name": "Beef",
+      "nameBn": "গরুর মাংস",
+      "category": "meat",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 250
+        }
+      ]
+    },
+    {
+      "id": "fish_salmon",
+      "name": "Salmon",
+      "nameBn": "স্যামন মাছ",
+      "category": "seafood",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 208
+        }
+      ]
+    },
+    {
+      "id": "egg",
+      "name": "Egg",
+      "nameBn": "ডিম",
+      "category": "protein",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 143
+        }
+      ]
+    },
+    {
+      "id": "milk",
+      "name": "Milk",
+      "nameBn": "দুধ",
+      "category": "dairy",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 42
+        }
+      ]
+    },
+    {
+      "id": "cheese",
+      "name": "Cheese",
+      "nameBn": "চিজ",
+      "category": "dairy",
+      "imageUrl": "",
+      "portions": [
+        {
+          "size": "100g",
+          "calories": 402
         }
       ]
     }
