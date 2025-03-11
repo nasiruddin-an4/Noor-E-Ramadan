@@ -1,15 +1,17 @@
+import '@/global.css';
 import { useEffect } from 'react';
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import { useFrameworkReady } from '@/hooks/useFrameworkReady';
 import { useFonts } from 'expo-font';
+
 import {
   NotoNaskhArabic_400Regular,
-  NotoNaskhArabic_700Bold
+  NotoNaskhArabic_700Bold,
 } from '@expo-google-fonts/noto-naskh-arabic';
 import {
   NotoSansBengali_400Regular,
-  NotoSansBengali_700Bold
+  NotoSansBengali_700Bold,
 } from '@expo-google-fonts/noto-sans-bengali';
 import { SplashScreen } from 'expo-router';
 
