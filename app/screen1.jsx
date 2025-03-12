@@ -5,12 +5,12 @@ import {
   TextInput,
   TouchableOpacity,
   ScrollView,
-  SafeAreaView,
   StatusBar,
   Switch,
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Input field component to reduce repetition
 const InputField = ({
@@ -268,7 +268,7 @@ export default function ZakatCalculator() {
   );
 
   return (
-    <SafeAreaView className="flex-1 bg-gray-900 pt-7">
+    <SafeAreaView className="flex-1 bg-gray-900 ">
       <StatusBar barStyle="light-content" backgroundColor="#111827" />
 
       {/* Header */}
