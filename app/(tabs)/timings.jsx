@@ -5,7 +5,7 @@ import { Picker } from '@react-native-picker/picker';
 import { useStore } from '@/store/useStore';
 import { divisions } from '@/data/divisions.json';
 import { format } from 'date-fns';
-import { ArrowRight } from 'lucide-react-native';
+import { Ionicons } from '@expo/vector-icons';
 import namazSchedule from '@/data/namaz_schedule_2025.json';
 import dayjs from 'dayjs';
 
@@ -51,7 +51,7 @@ export default function TimingsScreen() {
               </Picker>
             </View>
           </View>
-          <ArrowRight style={styles.icon} size={24} color="#F59E0B" />
+          <Ionicons style={styles.icon} name="arrow-forward" size={24} color="#F59E0B" />
           <View style={styles.picker}>
             <Text style={styles.label}>To</Text>
             <View style={styles.pickerWrapper}>

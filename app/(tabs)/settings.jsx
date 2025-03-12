@@ -1,7 +1,7 @@
 import { View, Text, StyleSheet, Switch, Pressable } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useStore } from '@/store/useStore';
-import { Bell, Globe, Moon, ChevronRight } from 'lucide-react-native';
+import { Ionicons } from '@expo/vector-icons';
 
 export default function SettingsScreen() {
   const { settings, updateSettings } = useStore();
@@ -29,7 +29,7 @@ export default function SettingsScreen() {
           <View style={styles.settingsList}>
             <View style={styles.settingItem}>
               <View style={styles.settingIcon}>
-                <Bell size={24} color="#F59E0B" />
+                <Ionicons name="notifications" size={24} color="#F59E0B" />
               </View>
               <View style={styles.settingContent}>
                 <Text style={styles.settingTitle}>Notifications</Text>
@@ -47,7 +47,7 @@ export default function SettingsScreen() {
 
             <Pressable style={styles.settingItem} onPress={toggleLanguage}>
               <View style={styles.settingIcon}>
-                <Globe size={24} color="#F59E0B" />
+                <Ionicons name="globe" size={24} color="#F59E0B" />
               </View>
               <View style={styles.settingContent}>
                 <Text style={styles.settingTitle}>Language</Text>
@@ -55,12 +55,12 @@ export default function SettingsScreen() {
                   {settings.language === 'en' ? 'English' : 'বাংলা'}
                 </Text>
               </View>
-              <ChevronRight size={24} color="#64748B" />
+              <Ionicons name="chevron-forward" size={24} color="#64748B" />
             </Pressable>
 
             <Pressable style={styles.settingItem} onPress={toggleTheme}>
               <View style={styles.settingIcon}>
-                <Moon size={24} color="#F59E0B" />
+                <Ionicons name="moon" size={24} color="#F59E0B" />
               </View>
               <View style={styles.settingContent}>
                 <Text style={styles.settingTitle}>Theme</Text>
@@ -68,7 +68,7 @@ export default function SettingsScreen() {
                   {settings.theme === 'dark' ? 'Dark Mode' : 'Light Mode'}
                 </Text>
               </View>
-              <ChevronRight size={24} color="#64748B" />
+              <Ionicons name="chevron-forward" size={24} color="#64748B" />
             </Pressable>
           </View>
         </View>

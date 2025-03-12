@@ -1,5 +1,5 @@
 import { View, Text, StyleSheet, Pressable } from 'react-native';
-import { Check, Minus, Plus, Flame } from 'lucide-react-native';
+import { Ionicons } from '@expo/vector-icons';
 import type { FoodItem } from '@/types/data';
 import { useStore } from '@/store/useStore';
 import { useState } from 'react';
@@ -51,7 +51,7 @@ export default function FoodCard({ food }: FoodCardProps) {
           
           {isSelected && (
             <View style={styles.checkmark}>
-              <Check size={20} color="#FFFFFF" />
+              <Ionicons name="checkmark" size={20} color="#FFFFFF" />
             </View>
           )}
         </View>
@@ -64,7 +64,7 @@ export default function FoodCard({ food }: FoodCardProps) {
         
         <View style={styles.portionSection}>
           <View style={styles.caloriesDisplay}>
-            <Flame size={18} color="#F59E0B" />
+            <Ionicons name="flame" size={18} color="#F59E0B" />
             <Text style={styles.caloriesText}>{calculateCalories()}</Text>
             <Text style={styles.caloriesUnit}>calories</Text>
           </View>
@@ -75,7 +75,7 @@ export default function FoodCard({ food }: FoodCardProps) {
               onPress={decrementAmount}
               disabled={customAmount <= 50}
             >
-              <Minus size={18} color={customAmount <= 50 ? "#64748B" : "#F8FAFC"} />
+              <Ionicons name="remove" size={18} color={customAmount <= 50 ? "#64748B" : "#F8FAFC"} />
             </Pressable>
             
             <View style={styles.amountContainer}>
@@ -84,7 +84,7 @@ export default function FoodCard({ food }: FoodCardProps) {
             </View>
             
             <Pressable style={styles.button} onPress={incrementAmount}>
-              <Plus size={18} color="#F8FAFC" />
+              <Ionicons name="add" size={18} color="#F8FAFC" />
             </Pressable>
           </View>
         </View>

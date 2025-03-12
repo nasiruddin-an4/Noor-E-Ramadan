@@ -1,22 +1,21 @@
 import { View, Text, StyleSheet } from 'react-native';
 import { format } from 'date-fns';
-import { Moon, Sun } from 'lucide-react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 export default function TimingCard({ Date, Sehri, Iftar }) {
   return (
-    
     <View style={styles.container}>
       <Text style={styles.date}>{Date}</Text>
-
+      
       <View style={styles.timingsContainer}>
         <View style={styles.timing}>
-          <Moon size={24} color="#F59E0B" />
+          <MaterialCommunityIcons name="weather-night" size={24} color="#F59E0B" />
           <Text style={styles.label}>Sehri</Text>
           <Text style={styles.time}>{Sehri}</Text>
         </View>
         <View style={styles.divider} />
         <View style={styles.timing}>
-          <Sun size={24} color="#F59E0B" />
+          <MaterialCommunityIcons name="white-balance-sunny" size={24} color="#F59E0B" />
           <Text style={styles.label}>Iftar</Text>
           <Text style={styles.time}>{Iftar}</Text>
         </View>
