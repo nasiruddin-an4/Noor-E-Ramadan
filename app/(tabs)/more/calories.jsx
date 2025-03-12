@@ -42,7 +42,6 @@ const CompactFoodCard = ({ food, isSelected }) => {
         <View className="flex-1 justify-center p-3">
           <Text className="text-white font-semibold text-base">{food.name}</Text>
           <View className="flex-row justify-between mt-1">
-            {/* <Text className="text-slate-300 text-xs">{food.portions[0].amount} {food.portions[0].unit}</Text> */}
             <Text className="text-amber-500 font-bold">{Math.round(food.portions[0].calories * quantity)} cal</Text>
           </View>
         </View>

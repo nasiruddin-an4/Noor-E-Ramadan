@@ -17,7 +17,7 @@ export default function MoreScreen() {
   return (
     <SafeAreaView className="flex-1 bg-gray-900">
       <ScrollView className="flex-1">
-        <View className="px-4 pt-6 pb-6">  {/* Adjust padding */}
+        <View className="px-4 pt-6 pb-6">
           <Text className="text-white text-2xl font-bold mb-6">More Options</Text>
           <View className="flex-row flex-wrap justify-between">
             {cards.map((card, index) => (
