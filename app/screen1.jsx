@@ -339,7 +339,7 @@ export default function ZakatCalculator() {
               />
 
               <TouchableOpacity
-                className="bg-gray-700 py-2 px-4 rounded-lg items-center mt-2"
+                className="bg-gray-700 py-3 px-4 rounded-lg items-center mt-2"
                 onPress={() => setActiveTab("liabilities")}
               >
                 <Text className="text-white">Next: Add Liabilities →</Text>
