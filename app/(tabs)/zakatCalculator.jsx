@@ -1,15 +1,5 @@
 import { useState } from 'react';
-import {
-  View,
-  Text,
-  TextInput,
-  TouchableOpacity,
-  ScrollView,
-  StatusBar,
-  Switch,
-  KeyboardAvoidingView,
-  Platform,
-} from 'react-native';
+import {View,Text,TextInput,TouchableOpacity,ScrollView,StatusBar,Switch,KeyboardAvoidingView,Platform} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 // Input field component to reduce repetition
@@ -412,7 +402,7 @@ export default function ZakatCalculator() {
 
               <TouchableOpacity
                 className="bg-emerald-700 py-3 px-4 rounded-lg items-center mt-2"
-                onPress={() => setActiveTab("liabilities")}
+                onPress={() => setActiveTab('liabilities')}
               >
                 <Text className="text-white">Next: Add Liabilities →</Text>
               </TouchableOpacity>

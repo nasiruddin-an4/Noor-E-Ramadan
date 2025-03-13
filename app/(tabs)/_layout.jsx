@@ -1,5 +1,5 @@
 import { Tabs } from 'expo-router';
-import { MaterialCommunityIcons, FontAwesome5, Ionicons, MaterialIcons, AntDesign, } from '@expo/vector-icons';
+import { MaterialCommunityIcons, FontAwesome5, Ionicons, MaterialIcons, AntDesign } from '@expo/vector-icons';
 
 export default function TabLayout() {
   return (
