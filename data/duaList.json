@@ -1,0 +1,144 @@
+{
+    "duas": [
+      {
+        "id": "1",
+        "title": "আজানের পর পড়ার দোয়া",
+        "arabic": "اَللّٰهُمَّ رَبَّ هٰذِهِ الدَّعْوَةِ التَّامَّةِ...",
+        "transliteration": "Allahumma rabba hadhihid-da’watit-tammah...",
+        "translation": "হে আল্লাহ, এই পরিপূর্ণ আহ্বানের রব..."
+      },
+      {
+        "id": "2",
+        "title": "নামাজ শুরু করার দোয়া",
+        "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ...",
+        "transliteration": "Subhanaka Allahumma wa bihamdika...",
+        "translation": "হে আল্লাহ, আমি তোমার পবিত্রতা বর্ণনা করি এবং তোমার প্রশংসা করি..."
+      },
+      {
+        "id": "3",
+        "title": "রুকু করার দোয়া",
+        "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ...",
+        "transliteration": "Subhana Rabbiyal Adheem...",
+        "translation": "মহান আমার রবের পবিত্রতা..."
+      },
+      {
+        "id": "4",
+        "title": "সিজদা করার দোয়া",
+        "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَى...",
+        "transliteration": "Subhana Rabbiyal A’la...",
+        "translation": "সর্বোচ্চ আমার রবের পবিত্রতা..."
+      },
+      {
+        "id": "5",
+        "title": "তাশাহহুদ পড়ার দোয়া",
+        "arabic": "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ...",
+        "transliteration": "At-tahiyyatu lillahi was-salawatu wat-tayyibatu...",
+        "translation": "সকল সম্মান, ইবাদত ও পবিত্রতা আল্লাহর জন্য..."
+      },
+      {
+        "id": "6",
+        "title": "নামাজ শেষ করার দোয়া",
+        "arabic": "اَللّٰهُمَّ اغْفِرْ لِي ذَنْبِي...",
+        "transliteration": "Allahumma-ghfir li dhanbi...",
+        "translation": "হে আল্লাহ, আমার গুনাহ ক্ষমা করুন..."
+      },
+      {
+        "id": "7",
+        "title": "মসজিদে প্রবেশের দোয়া",
+        "arabic": "اَللّٰهُمَّ افْتَحْ لِي أَبْوَابَ رَحْمَتِكَ...",
+        "transliteration": "Allahumma aftah li abwaba rahmatika...",
+        "translation": "হে আল্লাহ, আমার জন্য আপনার রহমতের দরজা খুলে দিন..."
+      },
+      {
+        "id": "8",
+        "title": "মসজিদ থেকে বের হওয়ার দোয়া",
+        "arabic": "اَللّٰهُمَّ إِنِّي أَسْأَلُكَ مِنْ فَضْلِكَ...",
+        "transliteration": "Allahumma inni as’aluka min fadhlika...",
+        "translation": "হে আল্লাহ, আমি আপনার অনুগ্রহ প্রার্থনা করি..."
+      },
+      {
+        "id": "9",
+        "title": "ঘুমানোর আগের দোয়া",
+        "arabic": "بِاسْمِكَ رَبِّي وَضَعْتُ جَنْبِي...",
+        "transliteration": "Bismika Rabbi wada’tu janbi...",
+        "translation": "হে আমার রব, আপনার নামে আমি আমার পাশ ফিরাই..."
+      },
+      {
+        "id": "10",
+        "title": "ঘুম থেকে উঠার দোয়া",
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا...",
+        "transliteration": "Alhamdu lillahil-ladhi ahyaana...",
+        "translation": "সমস্ত প্রশংসা আল্লাহর জন্য, যিনি আমাদের জীবিত করেছেন..."
+      },
+      {
+        "id": "11",
+        "title": "খাবার খাওয়ার আগে দোয়া",
+        "arabic": "بِسْمِ اللَّهِ",
+        "transliteration": "Bismillah",
+        "translation": "আল্লাহর নামে (শুরু করছি)।"
+      },
+      {
+        "id": "12",
+        "title": "খাবার খাওয়ার পরের দোয়া",
+        "arabic": "الْحَمْدُ لِلَّهِ الَّذِي أَطْعَمَنَا وَسَقَانَا...",
+        "transliteration": "Alhamdu lillahilladhi at'amana wa saqana...",
+        "translation": "সমস্ত প্রশংসা আল্লাহর জন্য, যিনি আমাদের খাবার ও পানীয় দান করেছেন..."
+      },
+      {
+        "id": "13",
+        "title": "বাথরুমে প্রবেশের দোয়া",
+        "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنَ الْخُبُثِ وَالْخَبَائِثِ",
+        "transliteration": "Allahumma inni a’udhu bika minal khubuthi wal khaba’ith",
+        "translation": "হে আল্লাহ, আমি আপনার কাছে আশ্রয় চাই অপবিত্র ও অপবিত্র আত্মাদের থেকে।"
+      },
+      {
+        "id": "14",
+        "title": "বাথরুম থেকে বের হওয়ার দোয়া",
+        "arabic": "غُفْرَانَكَ",
+        "transliteration": "Ghufranak",
+        "translation": "আমি আপনার ক্ষমা প্রার্থনা করি।"
+      },
+      {
+        "id": "15",
+        "title": "নতুন কাপড় পরার দোয়া",
+        "arabic": "اللَّهُمَّ لَكَ الْحَمْدُ أَنْتَ كَسَوْتَنِيهِ...",
+        "transliteration": "Allahumma laka al-hamdu anta kasawtani...",
+        "translation": "হে আল্লাহ, সকল প্রশংসা আপনার, যিনি আমাকে এই পোশাক পরিধান করিয়েছেন..."
+      },
+      {
+        "id": "16",
+        "title": "আয়নায় তাকানোর দোয়া",
+        "arabic": "اللَّهُمَّ كَمَا أَحْسَنْتَ خَلْقِي فَحَسِّنْ خُلُقِي",
+        "transliteration": "Allahumma kama ahsanta khalqi fahassin khuluqi",
+        "translation": "হে আল্লাহ, যেমন আপনি আমার চেহারা সুন্দর করেছেন, তেমনই আমার চরিত্রকেও সুন্দর করুন।"
+      },
+      {
+        "id": "17",
+        "title": "বিদেশ ভ্রমণের দোয়া",
+        "arabic": "اللَّهُمَّ إِنَّا نَسْأَلُكَ فِي سَفَرِنَا هَذَا الْبِرَّ وَالتَّقْوَى...",
+        "transliteration": "Allahumma inna nas’aluka fi safarina hadha al-birra wat-taqwa...",
+        "translation": "হে আল্লাহ, আমরা এই সফরে আপনার নেকি ও তাকওয়া প্রার্থনা করি..."
+      },
+      {
+        "id": "18",
+        "title": "বিপদে পড়লে পড়ার দোয়া",
+        "arabic": "لَا إِلٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+        "transliteration": "La ilaha illa anta subhanaka inni kuntu minaz-zalimin",
+        "translation": "আপনি ছাড়া কোনো উপাস্য নেই, আপনি পবিত্র, আমি অন্যায়কারীদের অন্তর্ভুক্ত ছিলাম।"
+      },
+      {
+        "id": "19",
+        "title": "রাগ কমানোর দোয়া",
+        "arabic": "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ",
+        "transliteration": "A’udhu billahi minash-shaytanir-rajim",
+        "translation": "আমি বিতাড়িত শয়তানের অনিষ্ট থেকে আল্লাহর কাছে আশ্রয় প্রার্থনা করছি।"
+      },
+      {
+        "id": "20",
+        "title": "বর্ষার সময় দোয়া",
+        "arabic": "اللَّهُمَّ صَيِّبًا نَافِعًا",
+        "transliteration": "Allahumma sayyiban nafi’an",
+        "translation": "হে আল্লাহ, এই বৃষ্টি আমাদের জন্য কল্যাণকর করুন।"
+      }
+    ]
+  }

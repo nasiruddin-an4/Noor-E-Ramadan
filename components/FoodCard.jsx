@@ -1,12 +1,35 @@
-import { View, Text, Pressable } from 'react-native';
+import { View, Text, Pressable, StyleSheet, Animated, useColorScheme } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useStore } from '@/store/useStore';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function FoodCard({ food }) {
-  const { selectedFoods, toggleFoodSelection } = useStore();
+  const { selectedFoods, toggleFoodSelection, updateFoodAmount } = useStore();
   const isSelected = !!selectedFoods[food.id];
-  const [customAmount, setCustomAmount] = useState(100);
+  const [customAmount, setCustomAmount] = useState(selectedFoods[food.id]?.customAmount || 100);
+  const [scaleAnim] = useState(new Animated.Value(1));
+  const colorScheme = useColorScheme();
+
+  useEffect(() => {
+    if (isSelected && updateFoodAmount) {
+      updateFoodAmount(food.id, customAmount);
+    }
+  }, [customAmount, isSelected, updateFoodAmount]);
+
+  useEffect(() => {
+    Animated.sequence([
+      Animated.timing(scaleAnim, {
+        toValue: isSelected ? 1.05 : 1,
+        duration: 150,
+        useNativeDriver: true,
+      }),
+      Animated.timing(scaleAnim, {
+        toValue: 1,
+        duration: 150,
+        useNativeDriver: true,
+      }),
+    ]).start();
+  }, [isSelected]);
 
   const getUnit = () => {
     const sizeStr = food.portions[0].size;
@@ -21,68 +44,150 @@ export default function FoodCard({ food }) {
     return Math.round((customAmount / basePortion) * baseCalories);
   };
 
-  const incrementAmount = () => setCustomAmount(prev => prev + 50);
-  const decrementAmount = () => setCustomAmount(prev => Math.max(50, prev - 50));
+  const incrementAmount = () => setCustomAmount((prev) => prev + 50);
+  const decrementAmount = () => setCustomAmount((prev) => Math.max(50, prev - 50));
+
+  const styles = getStyles(colorScheme);
 
   return (
-    <Pressable
-      className={`flex-row rounded-2xl mb-4 shadow-lg overflow-hidden p-4 ${
-        isSelected ? 'bg-gray-800' : 'bg-gray-700'
-      }`}
-      onPress={() => toggleFoodSelection(food)}
+    <Animated.View
+      style={[styles.container, isSelected && styles.selectedContainer, { transform: [{ scale: scaleAnim }] }]}
     >
-      <View className="w-2 bg-amber-500 opacity-80" />
-
-      <View className="flex-1 ml-4">
-        {/* Header */}
-        <View className="flex-row justify-between items-start mb-2">
-          <Text className="text-lg font-bold text-white">
-            {food.name} - ({food.nameBn})
-          </Text>
-          {isSelected && (
-            <View className="bg-amber-500 p-1 rounded-lg">
-              <Ionicons name="checkmark" size={20} color="#FFFFFF" />
-            </View>
+      <Pressable
+        style={styles.cardContent}
+        onPress={() => toggleFoodSelection(food)}
+        android_ripple={{ color: colorScheme === 'dark' ? 'rgba(255, 255, 255, 0.1)' : 'rgba(0, 0, 0, 0.1)' }}
+      >
+        <View style={styles.header}>
+          <View style={styles.nameContainer}>
+            <Text style={styles.nameText}>{`${food.name} - ${food.nameBn}`}</Text>
+          </View>
+          {isSelected ? (
+            <Ionicons name="checkmark-circle" size={20} color="#4CAF50" />
+          ) : (
+            <Ionicons name="add-circle-outline" size={20} color={colorScheme === 'dark' ? '#9E9E9E' : '#757575'} />
           )}
         </View>
-
-        {/* Category */}
-        <View className="bg-gray-600 px-3 py-1 rounded-full self-start mb-3">
-          <Text className="text-xs font-semibold text-gray-300 capitalize">{food.category}</Text>
+        <View style={styles.categoryContainer}>
+          <Ionicons name="restaurant-outline" size={12} color={colorScheme === 'dark' ? '#9E9E9E' : '#757575'} />
+          <Text style={styles.categoryText}>{food.category}</Text>
         </View>
-
-        <View className="h-[1px] bg-gray-500 my-3" />
-
-        {/* Calories & Portion Controls */}
-        <View className="flex-row justify-between items-center">
-          <View className="flex-row items-center">
-            <Ionicons name="flame" size={18} color="#F59E0B" />
-            <Text className="text-xl font-bold text-amber-400 ml-2">{calculateCalories()}</Text>
-            <Text className="text-sm text-gray-400 ml-1">calories</Text>
+        <View style={styles.nutritionContainer}>
+          <View style={styles.caloriesContainer}>
+            <Ionicons name="flame-outline" size={16} color="#FF5722" />
+            <Text style={styles.caloriesText}>{calculateCalories()}</Text>
+            <Text style={styles.caloriesUnit}>calories</Text>
           </View>
-
-          <View className="flex-row items-center">
-            <Pressable
-              className={`w-9 h-9 rounded-full flex items-center justify-center ${
-                customAmount <= 50 ? 'bg-gray-500 opacity-50' : 'bg-gray-600'
-              }`}
-              onPress={decrementAmount}
-              disabled={customAmount <= 50}
-            >
-              <Ionicons name="remove" size={18} color="#F8FAFC" />
+          <View style={styles.portionContainer}>
+            <Pressable onPress={decrementAmount} style={styles.portionButton} hitSlop={10}>
+              <Ionicons name="remove-circle" size={20} color="#2196F3" />
             </Pressable>
-
-            <View className="flex-row items-baseline px-4">
-              <Text className="text-lg font-bold text-white">{customAmount}</Text>
-              <Text className="text-sm text-gray-400 ml-1">{unit}</Text>
+            <View style={styles.amountContainer}>
+              <Text style={styles.amountText}>{customAmount}</Text>
+              <Text style={styles.unitText}>{unit}</Text>
             </View>
-
-            <Pressable className="w-9 h-9 bg-gray-600 rounded-full flex items-center justify-center" onPress={incrementAmount}>
-              <Ionicons name="add" size={18} color="#F8FAFC" />
+            <Pressable onPress={incrementAmount} style={styles.portionButton} hitSlop={10}>
+              <Ionicons name="add-circle" size={20} color="#2196F3" />
             </Pressable>
           </View>
         </View>
-      </View>
-    </Pressable>
+      </Pressable>
+    </Animated.View>
   );
 }
+
+// Styles unchanged
+const getStyles = (colorScheme) =>
+  StyleSheet.create({
+    container: {
+      backgroundColor: colorScheme === 'dark' ? '#1E1E1E' : '#FFFFFF',
+      borderRadius: 8,
+      marginVertical: 6,
+      marginHorizontal: 12,
+      shadowColor: colorScheme === 'dark' ? '#000' : '#000',
+      shadowOffset: { width: 0, height: 1 },
+      shadowOpacity: colorScheme === 'dark' ? 0.3 : 0.1,
+      shadowRadius: 2,
+      elevation: 2,
+      overflow: 'hidden',
+    },
+    selectedContainer: {
+      backgroundColor: colorScheme === 'dark' ? '#2E2E2E' : '#E3F2FD',
+      borderColor: '#2196F3',
+      borderWidth: 1,
+    },
+    cardContent: {
+      padding: 12,
+    },
+    header: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      marginBottom: 6,
+    },
+    nameContainer: {
+      flex: 1,
+    },
+    nameText: {
+      fontSize: 14,
+      fontWeight: 'bold',
+      color: colorScheme === 'dark' ? '#FFFFFF' : '#212121',
+    },
+    categoryContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: 8,
+    },
+    categoryText: {
+      fontSize: 12,
+      color: colorScheme === 'dark' ? '#9E9E9E' : '#757575',
+      marginLeft: 4,
+    },
+    nutritionContainer: {
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+      alignItems: 'center',
+      paddingTop: 8,
+      borderTopWidth: 1,
+      borderTopColor: colorScheme === 'dark' ? '#333333' : '#EEEEEE',
+    },
+    caloriesContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    caloriesText: {
+      fontSize: 14,
+      fontWeight: 'bold',
+      color: '#FF5722',
+      marginLeft: 4,
+    },
+    caloriesUnit: {
+      fontSize: 12,
+      color: colorScheme === 'dark' ? '#9E9E9E' : '#757575',
+      marginLeft: 4,
+    },
+    portionContainer: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    portionButton: {
+      padding: 2,
+    },
+    amountContainer: {
+      flexDirection: 'row',
+      alignItems: 'baseline',
+      marginHorizontal: 6,
+      minWidth: 50,
+      justifyContent: 'center',
+    },
+    amountText: {
+      fontSize: 14,
+      fontWeight: 'bold',
+      color: colorScheme === 'dark' ? '#FFFFFF' : '#212121',
+    },
+    unitText: {
+      fontSize: 12,
+      color: colorScheme === 'dark' ? '#9E9E9E' : '#757575',
+      marginLeft: 2,
+    },
+  });

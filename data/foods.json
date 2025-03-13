@@ -22,5 +22,341 @@
         "calories": 130
       }
     ]
+  },
+  {
+    "id": 3,
+    "name": "Banana",
+    "nameBn": "কলা",
+    "category": "Fruit",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 89
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Chicken Breast",
+    "nameBn": "মুরগির বুক",
+    "category": "Protein",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 165
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Egg",
+    "nameBn": "ডিম",
+    "category": "Protein",
+    "portions": [
+      {
+        "size": "1 large (50g)",
+        "calories": 70
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Milk",
+    "nameBn": "দুধ",
+    "category": "Dairy",
+    "portions": [
+      {
+        "size": "1 cup (240ml)",
+        "calories": 103
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Bread",
+    "nameBn": "পাউরুটি",
+    "category": "Grain",
+    "portions": [
+      {
+        "size": "1 slice (30g)",
+        "calories": 79
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Potato",
+    "nameBn": "আলু",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 77
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Tomato",
+    "nameBn": "টমেটো",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 18
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Yogurt",
+    "nameBn": "দই",
+    "category": "Dairy",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 59
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Fish",
+    "nameBn": "মাছ",
+    "category": "Protein",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 206
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Lentils",
+    "nameBn": "ডাল",
+    "category": "Protein",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 116
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Orange",
+    "nameBn": "কমলা",
+    "category": "Fruit",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 47
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Cheese",
+    "nameBn": "পনির",
+    "category": "Dairy",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 402
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Beef",
+    "nameBn": "গরুর মাংস",
+    "category": "Protein",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 250
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Carrot",
+    "nameBn": "গাজর",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 41
+      }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Pasta",
+    "nameBn": "পাস্তা",
+    "category": "Grain",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 131
+      }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Cucumber",
+    "nameBn": "শসা",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 16
+      }
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Chocolate",
+    "nameBn": "চকলেট",
+    "category": "Snack",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 546
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Almonds",
+    "nameBn": "বাদাম",
+    "category": "Snack",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 579
+      }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Pineapple",
+    "nameBn": "আনারস",
+    "category": "Fruit",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 50
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Spinach",
+    "nameBn": "পালং শাক",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 23
+      }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Oats",
+    "nameBn": "ওটস",
+    "category": "Grain",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 389
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Butter",
+    "nameBn": "মাখন",
+    "category": "Dairy",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 717
+      }
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Pumpkin",
+    "nameBn": "কুমড়া",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 26
+      }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Peanuts",
+    "nameBn": "চিনাবাদাম",
+    "category": "Snack",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 567
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Watermelon",
+    "nameBn": "তরমুজ",
+    "category": "Fruit",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 30
+      }
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Broccoli",
+    "nameBn": "ব্রোকলি",
+    "category": "Vegetable",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 34
+      }
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Salmon",
+    "nameBn": "স্যালমন",
+    "category": "Protein",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 208
+      }
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Honey",
+    "nameBn": "মধু",
+    "category": "Sweetener",
+    "portions": [
+      {
+        "size": "100g",
+        "calories": 304
+      }
+    ]
   }
 ]

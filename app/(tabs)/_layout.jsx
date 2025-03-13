@@ -1,13 +1,42 @@
 import { Tabs } from 'expo-router';
-import { MaterialCommunityIcons, FontAwesome5, Ionicons, MaterialIcons, AntDesign } from '@expo/vector-icons';
+import { useColorScheme } from 'react-native';
+import {
+  MaterialCommunityIcons,
+  FontAwesome5,
+  Ionicons,
+  MaterialIcons,
+  AntDesign,
+} from '@expo/vector-icons';
 
 export default function TabLayout() {
+  const colorScheme = useColorScheme() || 'dark';
+
+  // Theme definitions
+  const themeStyles = {
+    light: {
+      tabBarBackground: '#F9FAFB', // Light gray background
+      tabBarActiveTint: '#F59E0B', // Amber active color
+      tabBarInactiveTint: '#64748B', // Gray for inactive
+      statusBarStyle: 'dark-content',
+      statusBarBackground: '#F9FAFB',
+    },
+    dark: {
+      tabBarBackground: '#1E293B', // Dark slate background
+      tabBarActiveTint: '#F59E0B', // Amber active color
+      tabBarInactiveTint: '#94A3B8', // Light gray for inactive
+      statusBarStyle: 'light-content',
+      statusBarBackground: '#1E293B',
+    },
+  };
+
+  const theme = themeStyles[colorScheme];
+
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: '#1E293B',
+          backgroundColor: theme.tabBarBackground,
           height: 60,
           paddingBottom: 20,
           paddingTop: 4,
@@ -18,8 +47,8 @@ export default function TabLayout() {
           fontWeight: '500',
           paddingBottom: 3,
         },
-        tabBarActiveTintColor: '#F59E0B',
-        tabBarInactiveTintColor: '#94A3B8',
+        tabBarActiveTintColor: theme.tabBarActiveTint,
+        tabBarInactiveTintColor: theme.tabBarInactiveTint,
       }}
     >
       {/* Ramadan Schedule Tab */}
@@ -27,7 +56,9 @@ export default function TabLayout() {
         name="index"
         options={{
           title: 'Ramadan',
-          tabBarIcon: ({ size, color }) => <FontAwesome5 name="mosque" size={18} color={color} />,
+          tabBarIcon: ({ size, color }) => (
+            <FontAwesome5 name="mosque" size={18} color={color} />
+          ),
         }}
       />
 
@@ -36,7 +67,9 @@ export default function TabLayout() {
         name="timings"
         options={{
           title: 'Compare',
-          tabBarIcon: ({ size, color }) => <Ionicons name="time-outline" size={24} color={color} />,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="time-outline" size={24} color={color} />
+          ),
         }}
       />
 
@@ -45,7 +78,9 @@ export default function TabLayout() {
         name="zakatCalculator"
         options={{
           title: 'Zakat',
-          tabBarIcon: ({ size, color }) => <MaterialIcons name="calculate" size={24} color={color} />,
+          tabBarIcon: ({ size, color }) => (
+            <MaterialIcons name="calculate" size={24} color={color} />
+          ),
         }}
       />
 
@@ -54,7 +89,9 @@ export default function TabLayout() {
         name="more"
         options={{
           title: 'More',
-          tabBarIcon: ({ size, color }) => <AntDesign name="appstore-o" size={18} color={color} />,
+          tabBarIcon: ({ size, color }) => (
+            <AntDesign name="appstore-o" size={18} color={color} />
+          ),
         }}
       />
 
@@ -63,7 +100,9 @@ export default function TabLayout() {
         name="settings"
         options={{
           title: 'Settings',
-          tabBarIcon: ({ size, color }) => <Ionicons name="settings-outline" size={18} color={color} />,
+          tabBarIcon: ({ size, color }) => (
+            <Ionicons name="settings-outline" size={18} color={color} />
+          ),
         }}
       />
     </Tabs>

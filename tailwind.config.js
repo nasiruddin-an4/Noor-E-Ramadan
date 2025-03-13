@@ -7,4 +7,5 @@ module.exports = {
     extend: {},
   },
   plugins: [],
+  darkMode: 'media', // Enable dark mode based on the system preference
 };
