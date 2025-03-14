@@ -12,8 +12,8 @@ export default function MoreScreen() {
     { title: 'Read Al-Quran', path: '/more/page2', iconName: 'book' },
     { title: 'Read Hadith', path: '/more/page3', iconName: 'book-outline' },
     { title: 'Ramadan Food Tips', path: '/more/page4', iconName: 'fast-food' },
-    { title: 'Dua List', path: '/more/page5', iconName: 'help-circle' },
-    { title: 'Advanced Settings', path: '/more/page6', iconName: 'settings' },
+    { title: 'Dua List', path: '/more/page5', iconName: 'book' },
+    { title: 'Divisionals Schedule', path: '/more/page6', iconName: 'settings' },
   ];
 
   // Theme-based Tailwind classes
