@@ -21,7 +21,7 @@ extensions.configure(com.facebook.react.ReactSettingsExtension) { ex ->
   }
 }
 
-rootProject.name = 'Ramadan-App'
+rootProject.name = 'NoorERamadan'
 
 dependencyResolutionManagement {
   versionCatalogs {

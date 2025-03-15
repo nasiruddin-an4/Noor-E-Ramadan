@@ -1,4 +1,4 @@
-package com.nasiruddin54017.ramadanapp
+package com.nooreramadan
 
 import android.app.Application
 import android.content.res.Configuration

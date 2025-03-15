@@ -86,13 +86,13 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace 'com.nasiruddin54017.ramadanapp'
+    namespace "com.nooreramadan"
     defaultConfig {
-        applicationId 'com.nasiruddin54017.ramadanapp'
+        applicationId "com.nooreramadan"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0"
     }
     signingConfigs {
         debug {
