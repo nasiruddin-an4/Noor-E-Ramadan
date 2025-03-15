@@ -1,0 +1,697 @@
+{
+  "names": [
+    {
+      "id": "1",
+      "arabic": "ٱلرَّحْمَٰنُ",
+      "transliteration": "Ar-Rahman",
+      "bangla": "পরম দয়ালু",
+      "bangla_uchcharon": "আর-রহমান"
+    },
+    {
+      "id": "2",
+      "arabic": "ٱلرَّحِيمُ",
+      "transliteration": "Ar-Rahim",
+      "bangla": "পরম করুণাময়",
+      "bangla_uchcharon": "আর-রহীম"
+    },
+    {
+      "id": "3",
+      "arabic": "ٱلْمَلِكُ",
+      "transliteration": "Al-Malik",
+      "bangla": "সর্বশক্তিমান রাজা",
+      "bangla_uchcharon": "আল-মালিক"
+    },
+    {
+      "id": "4",
+      "arabic": "ٱلْقُدُّوسُ",
+      "transliteration": "Al-Quddus",
+      "bangla": "পরম পবিত্র",
+      "bangla_uchcharon": "আল-কুদ্দুস"
+    },
+    {
+      "id": "5",
+      "arabic": "ٱلسَّلَامُ",
+      "transliteration": "As-Salam",
+      "bangla": "শান্তির আধার",
+      "bangla_uchcharon": "আস-সালাম"
+    },
+    {
+      "id": "6",
+      "arabic": "ٱلْمُؤْمِنُ",
+      "transliteration": "Al-Mu’min",
+      "bangla": "নিরাপত্তা প্রদানকারী",
+      "bangla_uchcharon": "আল-মু'মিন"
+    },
+    {
+      "id": "7",
+      "arabic": "ٱلْمُهَيْمِنُ",
+      "transliteration": "Al-Muhaymin",
+      "bangla": "পরিপূর্ণ রক্ষাকারী",
+      "bangla_uchcharon": "আল-মুহাইমিন"
+    },
+    {
+      "id": "8",
+      "arabic": "ٱلْعَزِيزُ",
+      "transliteration": "Al-Aziz",
+      "bangla": "পরাক্রমশালী",
+      "bangla_uchcharon": "আল-আজীজ"
+    },
+    {
+      "id": "9",
+      "arabic": "ٱلْجَبَّارُ",
+      "transliteration": "Al-Jabbar",
+      "bangla": "সর্বশক্তিমান",
+      "bangla_uchcharon": "আল-জাব্বার"
+    },
+    {
+      "id": "10",
+      "arabic": "ٱلْمُتَكَبِّرُ",
+      "transliteration": "Al-Mutakabbir",
+      "bangla": "গর্বিত",
+      "bangla_uchcharon": "আল-মুতাকাব্বির"
+    },
+    {
+      "id": "11",
+      "arabic": "ٱلْخَالِقُ",
+      "transliteration": "Al-Khaliq",
+      "bangla": "সৃষ্টিকর্তা",
+      "bangla_uchcharon": "আল-খালিক"
+    },
+    {
+      "id": "12",
+      "arabic": "ٱلْبَارِئُ",
+      "transliteration": "Al-Bari",
+      "bangla": "উৎপাদক",
+      "bangla_uchcharon": "আল-বারী"
+    },
+    {
+      "id": "13",
+      "arabic": "ٱلْمُصَوِّرُ",
+      "transliteration": "Al-Musawwir",
+      "bangla": "আকৃতি দানকারী",
+      "bangla_uchcharon": "আল-মুসাওয়ির"
+    },
+    {
+      "id": "14",
+      "arabic": "ٱلْغَفَّارُ",
+      "transliteration": "Al-Ghaffar",
+      "bangla": "ক্ষমাশীল",
+      "bangla_uchcharon": "আল-গাফফার"
+    },
+    {
+      "id": "15",
+      "arabic": "ٱلْقَهَّارُ",
+      "transliteration": "Al-Qahhar",
+      "bangla": "পরাক্রান্ত",
+      "bangla_uchcharon": "আল-কাহহার"
+    },
+    {
+      "id": "16",
+      "arabic": "ٱلْوَهَّابُ",
+      "transliteration": "Al-Wahhab",
+      "bangla": "দানশীল",
+      "bangla_uchcharon": "আল-ওয়াহহাব"
+    },
+    {
+      "id": "17",
+      "arabic": "ٱلرَّزَّاقُ",
+      "transliteration": "Ar-Razzaq",
+      "bangla": "জীবিকা দাতা",
+      "bangla_uchcharon": "আর-রাজ্জাক"
+    },
+    {
+      "id": "18",
+      "arabic": "ٱلْفَتَّاحُ",
+      "transliteration": "Al-Fattah",
+      "bangla": "বিজয়ী",
+      "bangla_uchcharon": "আল-ফাত্তাহ"
+    },
+    {
+      "id": "19",
+      "arabic": "ٱلْعَلِيمُ",
+      "transliteration": "Al-Alim",
+      "bangla": "সর্বজ্ঞ",
+      "bangla_uchcharon": "আল-আলীম"
+    },
+    {
+      "id": "20",
+      "arabic": "ٱلْقَابِضُ",
+      "transliteration": "Al-Qabid",
+      "bangla": "সংকোচকারী",
+      "bangla_uchcharon": "আল-কাবিদ"
+    },
+    {
+      "id": "21",
+      "arabic": "ٱلْبَاسِطُ",
+      "transliteration": "Al-Basit",
+      "bangla": "প্রসারকারী",
+      "bangla_uchcharon": "আল-বাসিত"
+    },
+    {
+      "id": "22",
+      "arabic": "ٱلْخَافِضُ",
+      "transliteration": "Al-Khafid",
+      "bangla": "অবনমনকারী",
+      "bangla_uchcharon": "আল-খাফিদ"
+    },
+    {
+      "id": "23",
+      "arabic": "ٱلرَّافِعُ",
+      "transliteration": "Ar-Rafi",
+      "bangla": "উন্নয়নকারী",
+      "bangla_uchcharon": "আর-রাফি"
+    },
+    {
+      "id": "24",
+      "arabic": "ٱلْمُعِزُّ",
+      "transliteration": "Al-Mu'izz",
+      "bangla": "মর্যাদাদাতা",
+      "bangla_uchcharon": "আল-মু'ইজ্জ"
+    },
+    {
+      "id": "25",
+      "arabic": "ٱلْمُذِلُّ",
+      "transliteration": "Al-Mudhill",
+      "bangla": "অপমানকারী",
+      "bangla_uchcharon": "আল-মুযিল"
+    },
+    {
+      "id": "26",
+      "arabic": "ٱلسَّمِيعُ",
+      "transliteration": "As-Sami",
+      "bangla": "সর্বশ্রোতা",
+      "bangla_uchcharon": "আস-সামী"
+    },
+    {
+      "id": "27",
+      "arabic": "ٱلْبَصِيرُ",
+      "transliteration": "Al-Basir",
+      "bangla": "সর্বদ্রষ্টা",
+      "bangla_uchcharon": "আল-বাসির"
+    },
+    {
+      "id": "28",
+      "arabic": "ٱلْحَكَمُ",
+      "transliteration": "Al-Hakam",
+      "bangla": "বিচারক",
+      "bangla_uchcharon": "আল-হাকাম"
+    },
+    {
+      "id": "29",
+      "arabic": "ٱلْعَدْلُ",
+      "transliteration": "Al-Adl",
+      "bangla": "ন্যায়বান",
+      "bangla_uchcharon": "আল-আদল"
+    },
+    {
+      "id": "30",
+      "arabic": "ٱللَّطِيفُ",
+      "transliteration": "Al-Latif",
+      "bangla": "সূক্ষ্মদর্শী",
+      "bangla_uchcharon": "আল-লাতিফ"
+    },
+    {
+      "id": "31",
+      "arabic": "ٱلْخَبِيرُ",
+      "transliteration": "Al-Khabir",
+      "bangla": "সবকিছু জানেন",
+      "bangla_uchcharon": "আল-খাবির"
+    },
+    {
+      "id": "32",
+      "arabic": "ٱلْحَلِيمُ",
+      "transliteration": "Al-Halim",
+      "bangla": "ধৈর্যশীল",
+      "bangla_uchcharon": "আল-হালীম"
+    },
+    {
+      "id": "33",
+      "arabic": "ٱلْعَظِيمُ",
+      "transliteration": "Al-Azim",
+      "bangla": "মহান",
+      "bangla_uchcharon": "আল-আজীম"
+    },
+    {
+      "id": "34",
+      "arabic": "ٱلْغَفُورُ",
+      "transliteration": "Al-Ghafur",
+      "bangla": "ক্ষমাশীল",
+      "bangla_uchcharon": "আল-গাফুর"
+    },
+    {
+      "id": "35",
+      "arabic": "ٱلشَّكُورُ",
+      "transliteration": "Ash-Shakur",
+      "bangla": "কৃতজ্ঞ",
+      "bangla_uchcharon": "আশ-শাকুর"
+    },
+    {
+      "id": "36",
+      "arabic": "ٱلْعَلِيُّ",
+      "transliteration": "Al-Ali",
+      "bangla": "সর্বোচ্চ",
+      "bangla_uchcharon": "আল-আলী"
+    },
+    {
+      "id": "37",
+      "arabic": "ٱلْكَبِيرُ",
+      "transliteration": "Al-Kabir",
+      "bangla": "পরম মহান",
+      "bangla_uchcharon": "আল-কবীর"
+    },
+    {
+      "id": "38",
+      "arabic": "ٱلْحَفِيظُ",
+      "transliteration": "Al-Hafiz",
+      "bangla": "রক্ষাকারী",
+      "bangla_uchcharon": "আল-হাফীজ"
+    },
+    {
+      "id": "39",
+      "arabic": "ٱلْمُقِيتُ",
+      "transliteration": "Al-Muqit",
+      "bangla": "জীবিকা দাতা",
+      "bangla_uchcharon": "আল-মুকীত"
+    },
+    {
+      "id": "40",
+      "arabic": "ٱلْحَسِيبُ",
+      "transliteration": "Al-Hasib",
+      "bangla": "হিসাব গ্রহণকারী",
+      "bangla_uchcharon": "আল-হাসিব"
+    },
+    {
+      "id": "41",
+      "arabic": "ٱلْجَلِيلُ",
+      "transliteration": "Al-Jalil",
+      "bangla": "মহিমান্বিত",
+      "bangla_uchcharon": "আল-জালীল"
+    },
+    {
+      "id": "42",
+      "arabic": "ٱلْكَرِيمُ",
+      "transliteration": "Al-Karim",
+      "bangla": "মহানুভব",
+      "bangla_uchcharon": "আল-কারীম"
+    },
+    {
+      "id": "43",
+      "arabic": "ٱلرَّقِيبُ",
+      "transliteration": "Ar-Raqib",
+      "bangla": "নিরীক্ষণকারী",
+      "bangla_uchcharon": "আর-রাকীব"
+    },
+    {
+      "id": "44",
+      "arabic": "ٱلْمُجِيبُ",
+      "transliteration": "Al-Mujib",
+      "bangla": "প্রার্থনা গ্রহণকারী",
+      "bangla_uchcharon": "আল-মুজীব"
+    },
+    {
+      "id": "45",
+      "arabic": "ٱلْوَاسِعُ",
+      "transliteration": "Al-Wasi",
+      "bangla": "প্রশস্ত",
+      "bangla_uchcharon": "আল-ওয়াসি"
+    },
+    {
+      "id": "46",
+      "arabic": "ٱلْحَكِيمُ",
+      "transliteration": "Al-Hakim",
+      "bangla": "প্রজ্ঞাময়",
+      "bangla_uchcharon": "আল-হাকীম"
+    },
+    {
+      "id": "47",
+      "arabic": "ٱلْوَدُودُ",
+      "transliteration": "Al-Wadud",
+      "bangla": "প্রেমময়",
+      "bangla_uchcharon": "আল-ওয়াদুদ"
+    },
+    {
+      "id": "48",
+      "arabic": "ٱلْمَجِيدُ",
+      "transliteration": "Al-Majid",
+      "bangla": "মহিমান্বিত",
+      "bangla_uchcharon": "আল-মাজীদ"
+    },
+    {
+      "id": "49",
+      "arabic": "ٱلْبَاعِثُ",
+      "transliteration": "Al-Ba'ith",
+      "bangla": "পুনরুত্থানকারী",
+      "bangla_uchcharon": "আল-বাইস"
+    },
+    {
+      "id": "50",
+      "arabic": "ٱلشَّهِيدُ",
+      "transliteration": "Ash-Shahid",
+      "bangla": "সাক্ষী",
+      "bangla_uchcharon": "আশ-শাহিদ"
+    },
+    {
+      "id": "51",
+      "arabic": "ٱلْحَقُّ",
+      "transliteration": "Al-Haqq",
+      "bangla": "সত্য",
+      "bangla_uchcharon": "আল-হক্ক"
+    },
+    {
+      "id": "52",
+      "arabic": "ٱلْوَكِيلُ",
+      "transliteration": "Al-Wakil",
+      "bangla": "ভরসাস্থল",
+      "bangla_uchcharon": "আল-ওয়াকীল"
+    },
+    {
+      "id": "53",
+      "arabic": "ٱلْقَوِيُّ",
+      "transliteration": "Al-Qawiyy",
+      "bangla": "শক্তিশালী",
+      "bangla_uchcharon": "আল-কাওইয়্য"
+    },
+    {
+      "id": "54",
+      "arabic": "ٱلْمَتِينُ",
+      "transliteration": "Al-Matin",
+      "bangla": "দৃঢ়",
+      "bangla_uchcharon": "আল-মাতীন"
+    },
+    {
+      "id": "55",
+      "arabic": "ٱلْوَلِيُّ",
+      "transliteration": "Al-Wali",
+      "bangla": "বন্ধু",
+      "bangla_uchcharon": "আল-ওয়ালী"
+    },
+    {
+      "id": "56",
+      "arabic": "ٱلْحَمِيدُ",
+      "transliteration": "Al-Hamid",
+      "bangla": "প্রশংসিত",
+      "bangla_uchcharon": "আল-হামীদ"
+    },
+    {
+      "id": "57",
+      "arabic": "ٱلْمُحْصِي",
+      "transliteration": "Al-Muhsi",
+      "bangla": "গণনাকারী",
+      "bangla_uchcharon": "আল-মুহসী"
+    },
+    {
+      "id": "58",
+      "arabic": "ٱلْمُبْدِئُ",
+      "transliteration": "Al-Mubdi",
+      "bangla": "আদি সৃষ্টিকর্তা",
+      "bangla_uchcharon": "আল-মুবদী"
+    },
+    {
+      "id": "59",
+      "arabic": "ٱلْمُعِيدُ",
+      "transliteration": "Al-Mu'id",
+      "bangla": "পুনরুত্থানকারী",
+      "bangla_uchcharon": "আল-মু'ঈদ"
+    },
+    {
+      "id": "60",
+      "arabic": "ٱلْمُحْيِي",
+      "transliteration": "Al-Muhyi",
+      "bangla": "জীবন দানকারী",
+      "bangla_uchcharon": "আল-মুহয়ী"
+    },
+    {
+      "id": "61",
+      "arabic": "ٱلْمُمِيتُ",
+      "transliteration": "Al-Mumit",
+      "bangla": "মৃত্যু দানকারী",
+      "bangla_uchcharon": "আল-মুমীত"
+    },
+    {
+      "id": "62",
+      "arabic": "ٱلْحَيُّ",
+      "transliteration": "Al-Hayy",
+      "bangla": "চিরঞ্জীব",
+      "bangla_uchcharon": "আল-হাইয়্য"
+    },
+    {
+      "id": "63",
+      "arabic": "ٱلْقَيُّومُ",
+      "transliteration": "Al-Qayyum",
+      "bangla": "স্বয়ংসম্পূর্ণ",
+      "bangla_uchcharon": "আল-কাইয়্যুম"
+    },
+    {
+      "id": "64",
+      "arabic": "ٱلْوَاجِدُ",
+      "transliteration": "Al-Wajid",
+      "bangla": "অন্বেষণকারী",
+      "bangla_uchcharon": "আল-ওয়াজিদ"
+    },
+    {
+      "id": "65",
+      "arabic": "ٱلْمَاجِدُ",
+      "transliteration": "Al-Majid",
+      "bangla": "মহিমান্বিত",
+      "bangla_uchcharon": "আল-মাজীদ"
+    },
+    {
+      "id": "66",
+      "arabic": "ٱلْوَاحِدُ",
+      "transliteration": "Al-Wahid",
+      "bangla": "একক",
+      "bangla_uchcharon": "আল-ওয়াহিদ"
+    },
+    {
+      "id": "67",
+      "arabic": "ٱلْأَحَدُ",
+      "transliteration": "Al-Ahad",
+      "bangla": "অদ্বিতীয়",
+      "bangla_uchcharon": "আল-আহাদ"
+    },
+    {
+      "id": "68",
+      "arabic": "ٱلصَّمَدُ",
+      "transliteration": "As-Samad",
+      "bangla": "অভয়স্থান",
+      "bangla_uchcharon": "আস-সামাদ"
+    },
+    {
+      "id": "69",
+      "arabic": "ٱلْقَادِرُ",
+      "transliteration": "Al-Qadir",
+      "bangla": "সক্ষম",
+      "bangla_uchcharon": "আল-কাদির"
+    },
+    {
+      "id": "70",
+      "arabic": "ٱلْمُقْتَدِرُ",
+      "transliteration": "Al-Muqtadir",
+      "bangla": "পরাক্রমশালী",
+      "bangla_uchcharon": "আল-মুকতাদির"
+    },
+    {
+      "id": "71",
+      "arabic": "ٱلْمُقَدِّمُ",
+      "transliteration": "Al-Muqaddim",
+      "bangla": "অগ্রগামী",
+      "bangla_uchcharon": "আল-মুকাদ্দিম"
+    },
+    {
+      "id": "72",
+      "arabic": "ٱلْمُؤَخِّرُ",
+      "transliteration": "Al-Mu'akhkhir",
+      "bangla": "পশ্চাদগামী",
+      "bangla_uchcharon": "আল-মু'আখখির"
+    },
+    {
+      "id": "73",
+      "arabic": "ٱلْأَوَّلُ",
+      "transliteration": "Al-Awwal",
+      "bangla": "প্রথম",
+      "bangla_uchcharon": "আল-আওয়াল"
+    },
+    {
+      "id": "74",
+      "arabic": "ٱلْآخِرُ",
+      "transliteration": "Al-Akhir",
+      "bangla": "শেষ",
+      "bangla_uchcharon": "আল-আখির"
+    },
+    {
+      "id": "75",
+      "arabic": "ٱلظَّاهِرُ",
+      "transliteration": "Az-Zahir",
+      "bangla": "প্রকাশ্য",
+      "bangla_uchcharon": "আজ-জাহির"
+    },
+    {
+      "id": "76",
+      "arabic": "ٱلْبَاطِنُ",
+      "transliteration": "Al-Batin",
+      "bangla": "গুপ্ত",
+      "bangla_uchcharon": "আল-বাতিন"
+    },
+    {
+      "id": "77",
+      "arabic": "ٱلْوَالِي",
+      "transliteration": "Al-Wali",
+      "bangla": "প্রতিপালক",
+      "bangla_uchcharon": "আল-ওয়ালী"
+    },
+    {
+      "id": "78",
+      "arabic": "ٱلْمُتَعَالِي",
+      "transliteration": "Al-Muta'ali",
+      "bangla": "সর্বোচ্চ",
+      "bangla_uchcharon": "আল-মুতাআলী"
+    },
+    {
+      "id": "79",
+      "arabic": "ٱلْبَرُّ",
+      "transliteration": "Al-Barr",
+      "bangla": "ন্যায়পরায়ণ",
+      "bangla_uchcharon": "আল-বার্র"
+    },
+    {
+      "id": "80",
+      "arabic": "ٱلْتَّوَّابُ",
+      "transliteration": "At-Tawwab",
+      "bangla": "তওবা গ্রহণকারী",
+      "bangla_uchcharon": "আত-তাওয়াব"
+    },
+    {
+      "id": "81",
+      "arabic": "ٱلْمُنْتَقِمُ",
+      "transliteration": "Al-Muntaqim",
+      "bangla": "প্রতিশোধ গ্রহণকারী",
+      "bangla_uchcharon": "আল-মুনতাকিম"
+    },
+    {
+      "id": "82",
+      "arabic": "ٱلْعَفُوُّ",
+      "transliteration": "Al-Afuw",
+      "bangla": "ক্ষমাশীল",
+      "bangla_uchcharon": "আল-আফুও"
+    },
+    {
+      "id": "83",
+      "arabic": "ٱلرَّءُوفُ",
+      "transliteration": "Ar-Ra'uf",
+      "bangla": "অনুগ্রহশীল",
+      "bangla_uchcharon": "আর-রাউফ"
+    },
+    {
+      "id": "84",
+      "arabic": "ٱلْمُقْسِطُ",
+      "transliteration": "Al-Muqsit",
+      "bangla": "ন্যায়বিচারক",
+      "bangla_uchcharon": "আল-মুকসিত"
+    },
+    {
+      "id": "85",
+      "arabic": "ٱلْجَامِعُ",
+      "transliteration": "Al-Jami",
+      "bangla": "একত্রকারী",
+      "bangla_uchcharon": "আল-জামি"
+    },
+    {
+      "id": "86",
+      "arabic": "ٱلْغَنِيُّ",
+      "transliteration": "Al-Ghani",
+      "bangla": "সম্পদশালী",
+      "bangla_uchcharon": "আল-গানী"
+    },
+    {
+      "id": "87",
+      "arabic": "ٱلْمُغْنِي",
+      "transliteration": "Al-Mughni",
+      "bangla": "সম্পদদাতা",
+      "bangla_uchcharon": "আল-মুগনী"
+    },
+    {
+      "id": "88",
+      "arabic": "ٱلْمَانِعُ",
+      "transliteration": "Al-Mani",
+      "bangla": "প্রতিরোধকারী",
+      "bangla_uchcharon": "আল-মানি"
+    },
+    {
+      "id": "89",
+      "arabic": "ٱلضَّارُّ",
+      "transliteration": "Ad-Darr",
+      "bangla": "ক্ষতিকারক",
+      "bangla_uchcharon": "আদ-দার্র"
+    },
+    {
+      "id": "90",
+      "arabic": "ٱلنَّافِعُ",
+      "transliteration": "An-Nafi",
+      "bangla": "উপকারী",
+      "bangla_uchcharon": "আন-নাফি"
+    },
+    {
+      "id": "91",
+      "arabic": "ٱلنُّورُ",
+      "transliteration": "An-Nur",
+      "bangla": "আলো",
+      "bangla_uchcharon": "আন-নূর"
+    },
+    {
+      "id": "92",
+      "arabic": "ٱلْهَادِي",
+      "transliteration": "Al-Hadi",
+      "bangla": "পথপ্রদর্শক",
+      "bangla_uchcharon": "আল-হাদী"
+    },
+    {
+      "id": "93",
+      "arabic": "ٱلْبَدِيعُ",
+      "transliteration": "Al-Badi",
+      "bangla": "অদ্বিতীয় সৃষ্টিকর্তা",
+      "bangla_uchcharon": "আল-বাদি"
+    },
+    {
+      "id": "94",
+      "arabic": "ٱلْبَاقِي",
+      "transliteration": "Al-Baqi",
+      "bangla": "চিরস্থায়ী",
+      "bangla_uchcharon": "আল-বাকী"
+    },
+    {
+      "id": "95",
+      "arabic": "ٱلْوَارِثُ",
+      "transliteration": "Al-Warith",
+      "bangla": "উত্তরাধিকারী",
+      "bangla_uchcharon": "আল-ওয়ারিস"
+    },
+    {
+      "id": "96",
+      "arabic": "ٱلرَّشِيدُ",
+      "transliteration": "Ar-Rashid",
+      "bangla": "সঠিক পথপ্রদর্শক",
+      "bangla_uchcharon": "আর-রশীদ"
+    },
+    {
+      "id": "97",
+      "arabic": "ٱلصَّبُورُ",
+      "transliteration": "As-Sabur",
+      "bangla": "ধৈর্যশীল",
+      "bangla_uchcharon": "আস-সাবুর"
+    },
+    {
+      "id": "98",
+      "arabic": "ٱلْكَبِيرُ",
+      "transliteration": "Al-Kabir",
+      "bangla": "পরম মহান",
+      "bangla_uchcharon": "আল-কবীর"
+  },
+  {
+      "id": "99",
+      "arabic": "ٱلْحَفِيظُ",
+      "transliteration": "Al-Hafiz",
+      "bangla": "রক্ষাকারী",
+      "bangla_uchcharon": "আল-হাফীজ"
+  }
+  ]
+}

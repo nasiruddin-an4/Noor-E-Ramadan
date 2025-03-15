@@ -17,7 +17,7 @@ export default function MoreScreen() {
     { title: 'Food Tips', path: '/more/page4', iconName: 'fast-food', gradient: ['#EF4444', '#DC2626'] },
     { title: 'Dua List', path: '/more/page5', iconName: 'prayer', gradient: ['#3B82F6', '#1D4ED8'] },
     { title: 'Ramadan Schedule', path: '/more/page6', iconName: 'time', gradient: ['#EC4899', '#DB2777'] },
-    { title: 'Qibla Finder', path: '/more/page7', iconName: 'compass', gradient: ['#14B8A6', '#0D9488'] },
+    { title: 'আল্লাহর ৯৯টি নাম', path: '/more/page7', iconName: 'compass', gradient: ['#14B8A6', '#0D9488'] },
     { title: 'Islamic Events Calendar', path: '/more/page8', iconName: 'calendar', gradient: ['#F97316', '#EA580C'] },
   ];
 
