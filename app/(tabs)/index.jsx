@@ -1,21 +1,7 @@
-import {
-  View,
-  Text,
-  TouchableOpacity,
-  ScrollView,
-  ImageBackground,
-  StatusBar,
-  Image,
-  Animated,
-  Modal,
-} from 'react-native';
+import {View,Text,TouchableOpacity,ScrollView,ImageBackground,StatusBar,Image,Animated,Modal,} from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
-import {
-  Ionicons,
-  MaterialCommunityIcons,
-  FontAwesome5,
-} from '@expo/vector-icons';
+import {Ionicons,MaterialCommunityIcons,FontAwesome5,} from '@expo/vector-icons';
 import namazSchedule from '@/data/namaz_schedule_2025.json';
 import { useState, useEffect, useRef } from 'react';
 import { LinearGradient } from 'expo-linear-gradient';
@@ -243,7 +229,7 @@ export default function PrayerTimesScreen() {
                       Dhaka, Bangladesh
                     </Text>
                     <View className="flex-row items-center mt-2">
-                      <Text className="text-white text-3xl font-bold ml-1">
+                      <Text className="text-white text-2xl font-bold">
                         {' '}
                         {formattedDate}
                       </Text>

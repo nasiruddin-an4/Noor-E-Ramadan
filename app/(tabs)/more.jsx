@@ -2,37 +2,37 @@ import { View, Text, TouchableOpacity, ScrollView, StatusBar, useColorScheme } f
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useRouter } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { LinearGradient } from 'expo-linear-gradient';
+import { useState } from 'react';
 
 export default function MoreScreen() {
   const router = useRouter();
-  const colorScheme = useColorScheme() || 'dark'; // Default to dark if null
+  const colorScheme = useColorScheme() || 'dark';
+  const [hoveredIndex, setHoveredIndex] = useState(null);
 
   const cards = [
-    { title: 'Food Calories', path: '/more/page1', iconName: 'flame' },
-    { title: 'Read Al-Quran', path: '/more/page2', iconName: 'book' },
-    { title: 'Read Hadith', path: '/more/page3', iconName: 'book-outline' },
-    { title: 'Ramadan Food Tips', path: '/more/page4', iconName: 'fast-food' },
-    { title: 'Dua List', path: '/more/page5', iconName: 'book' },
-    { title: 'Divisionals Schedule', path: '/more/page6', iconName: 'settings' },
+    { title: 'Food Calories', path: '/more/page1', iconName: 'flame', gradient: ['#F59E0B', '#D97706'] },
+    { title: 'Read Al-Quran', path: '/more/page2', iconName: 'book', gradient: ['#10B981', '#059669'] },
+    { title: 'Read Hadith', path: '/more/page3', iconName: 'book-outline', gradient: ['#8B5CF6', '#6D28D9'] },
+    { title: 'Food Tips', path: '/more/page4', iconName: 'fast-food', gradient: ['#EF4444', '#DC2626'] },
+    { title: 'Dua List', path: '/more/page5', iconName: 'prayer', gradient: ['#3B82F6', '#1D4ED8'] },
+    { title: 'Ramadan Schedule', path: '/more/page6', iconName: 'time', gradient: ['#EC4899', '#DB2777'] },
+    { title: 'Qibla Finder', path: '/more/page7', iconName: 'compass', gradient: ['#14B8A6', '#0D9488'] },
+    { title: 'Islamic Events Calendar', path: '/more/page8', iconName: 'calendar', gradient: ['#F97316', '#EA580C'] },
   ];
 
-  // Theme-based Tailwind classes
   const themeStyles = {
     light: {
-      background: 'bg-gray-100', // Soft light gray
-      text: 'text-gray-900', // Dark gray for contrast
-      cardBackground: 'bg-white', // White cards
-      cardIconBackground: 'bg-gray-200', // Light gray icon bg
-      iconColor: '#D97706', // Amber-600 for icons
-      shadow: 'shadow-sm', // Subtle shadow
+      background: 'bg-gray-50',
+      text: 'text-gray-800',
+      subText: 'text-gray-600',
+      border: 'border-gray-200',
     },
     dark: {
-      background: 'bg-gray-900', // Dark gray background
-      text: 'text-gray-100', // Light gray text
-      cardBackground: 'bg-gray-800', // Darker gray cards
-      cardIconBackground: 'bg-gray-700', // Slightly lighter gray for icons
-      iconColor: '#F59E0B', // Amber-500 for icons
-      shadow: 'shadow-md', // Slightly stronger shadow
+      background: 'bg-gray-900',
+      text: 'text-gray-100',
+      subText: 'text-gray-400',
+      border: 'border-gray-800',
     },
   };
 
@@ -41,24 +41,46 @@ export default function MoreScreen() {
   return (
     <SafeAreaView className={`flex-1 ${styles.background}`}>
       <StatusBar barStyle={colorScheme === 'dark' ? 'light-content' : 'dark-content'} />
-      <ScrollView className="flex-1 p-4">
-        <Text className={`text-2xl font-bold mb-6 ${styles.text}`}>More Options</Text>
-        <View className="flex-row flex-wrap justify-between">
+      <ScrollView className="flex-1 px-4 pt-6 ">
+        <View className="mb-6">
+          <Text className={`text-3xl font-bold ${styles.text}`}>Explore More</Text>
+          <Text className={`text-base ${styles.subText} mt-1`}>
+            Discover useful tools and resources
+          </Text>
+        </View>
+
+        <View className="flex-row flex-wrap justify-between pb-5">
           {cards.map((card, index) => (
             <TouchableOpacity
               key={index}
-              className={`w-[48%] ${styles.cardBackground} rounded-xl p-6 mb-4 items-center ${styles.shadow}`}
+              className={`w-[48%] mb-4 rounded-2xl overflow-hidden ${
+                hoveredIndex === index ? 'scale-105' : 'scale-100'
+              } transition-all duration-200`}
               onPress={() => router.push(card.path)}
-              activeOpacity={0.8} // Subtle touch feedback
+              onPressIn={() => setHoveredIndex(index)}
+              onPressOut={() => setHoveredIndex(null)}
+              activeOpacity={0.9}
             >
-              <View
-                className={`w-14 h-14 ${styles.cardIconBackground} rounded-full flex items-center justify-center mb-3`}
+              <LinearGradient
+                colors={card.gradient}
+                start={{ x: 0, y: 0 }}
+                end={{ x: 1, y: 1 }}
+                className="h-44 p-5 items-center justify-between" // Fixed height added
               >
-                <Ionicons name={card.iconName} size={28} color={styles.iconColor} />
-              </View>
-              <Text className={`text-lg font-medium text-center ${styles.text}`}>
-                {card.title}
-              </Text>
+                <View className="items-center">
+                  <View className="w-16 h-16 rounded-full bg-white/20 items-center justify-center mb-4">
+                    <Ionicons name={card.iconName} size={32} color="white" />
+                  </View>
+                  <Text 
+                    className="text-white text-lg font-semibold text-center px-2"
+                    numberOfLines={2} // Limit to 2 lines
+                    ellipsizeMode="tail" // Add ellipsis if text overflows
+                  >
+                    {card.title}
+                  </Text>
+                </View>
+                <View className="w-12 h-1 bg-white/30 rounded-full" />
+              </LinearGradient>
             </TouchableOpacity>
           ))}
         </View>
