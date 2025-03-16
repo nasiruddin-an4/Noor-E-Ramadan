@@ -9,7 +9,8 @@ import {
 } from '@expo/vector-icons';
 
 export default function TabLayout() {
-  const colorScheme = useColorScheme() || 'dark';
+  const colorScheme = useColorScheme();
+  console.log('🚀 ~ TabLayout ~ colorScheme:', colorScheme);
 
   // Theme definitions
   const themeStyles = {
@@ -30,13 +31,14 @@ export default function TabLayout() {
   };
 
   const theme = themeStyles[colorScheme];
+  console.log('🚀 ~ TabLayout ~ theme:', theme);
 
   return (
     <Tabs
       screenOptions={{
         headerShown: false,
         tabBarStyle: {
-          backgroundColor: theme.tabBarBackground,
+          backgroundColor: theme?.tabBarBackground,
           height: 60,
           paddingBottom: 20,
           paddingTop: 4,
