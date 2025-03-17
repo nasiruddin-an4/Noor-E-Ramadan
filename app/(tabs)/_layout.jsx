@@ -10,7 +10,6 @@ import {
 
 export default function TabLayout() {
   const colorScheme = useColorScheme();
-  console.log('🚀 ~ TabLayout ~ colorScheme:', colorScheme);
 
   // Theme definitions
   const themeStyles = {
@@ -31,7 +30,6 @@ export default function TabLayout() {
   };
 
   const theme = themeStyles[colorScheme];
-  console.log('🚀 ~ TabLayout ~ theme:', theme);
 
   return (
     <Tabs

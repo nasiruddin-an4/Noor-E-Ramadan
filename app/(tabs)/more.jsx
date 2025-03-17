@@ -37,12 +37,6 @@ export default function MoreScreen() {
       gradient: ['#8B5CF6', '#6D28D9'],
     },
     {
-      title: 'Food Tips',
-      path: '/more/page4',
-      iconName: 'fast-food',
-      gradient: ['#EF4444', '#DC2626'],
-    },
-    {
       title: 'Dua List',
       path: '/more/page5',
       iconName: 'document-text',
@@ -59,12 +53,6 @@ export default function MoreScreen() {
       path: '/more/page7',
       iconName: 'compass',
       gradient: ['#14B8A6', '#0D9488'],
-    },
-    {
-      title: 'Islamic Events Calendar',
-      path: '/more/page8',
-      iconName: 'calendar',
-      gradient: ['#F97316', '#EA580C'],
     },
   ];
 
@@ -104,9 +92,8 @@ export default function MoreScreen() {
           {cards.map((card, index) => (
             <TouchableOpacity
               key={index}
-              className={`w-[48%] mb-4 rounded-2xl overflow-hidden ${
-                hoveredIndex === index ? 'scale-105' : 'scale-100'
-              } transition-all duration-200`}
+              className={`w-[48%] mb-4 rounded-2xl overflow-hidden ${hoveredIndex === index ? 'scale-105' : 'scale-100'
+                } transition-all duration-200`}
               onPress={() => router.push(card.path)}
               onPressIn={() => setHoveredIndex(index)}
               onPressOut={() => setHoveredIndex(null)}
